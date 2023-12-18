@@ -1,0 +1,54 @@
+@charset "utf-8";
+
+.wrap{width:100%; height:100vh; display: flex;}
+
+/* header */
+#header{width:20%; height:100%; border-right:1px solid #dedede; box-sizing: border-box;}
+.menu_wrap{width:100%; height:100%; padding:0 20px; box-sizing: border-box; display: flex; flex-wrap: wrap; align-content: space-between;}
+.menu{width:100%; height:580px;}
+
+.menu>ul{width:100%; height:100%;}
+.menu>ul>li{width:100%; height:60px;}
+.menu>ul>li>a{display: flex; width:100%; height:100%; align-items: center; padding:0 20px; box-sizing: border-box; border-radius: 10px;}
+.menu>ul>li>a:hover{background: #eee;}
+.menu>ul>li>a>p{margin-left:20px;}
+
+.logo{width:100%; height:100px; display: flex; align-items: center; padding:0 20px; box-sizing: border-box;}
+.logo img{width:150px;}
+
+.hammenu{width:100%; height:120px;}
+/* .hammenu>ul>li{width:100%; height:60px;}
+.hammenu>ul>li>a{width:100%; height:100%; display: flex; align-items: center; padding:0 20px; box-sizing: border-box; border-radius: 10px;}
+.hammenu>ul>li>a:hover{background: #eee;}
+.hammenu>ul>li>a>p{margin-left:20px;} */
+.hammenu>ul{width:100%; height:100%;}
+.hammenu>ul>li{width:100%; height:60px;}
+.hammenu>ul>li>a{display: flex; width:100%; height:100%; align-items: center; padding:0 20px; box-sizing: border-box; border-radius: 10px;}
+.hammenu>ul>li>a:hover{background: #eee;}
+.hammenu>ul>li>a>p{margin-left:20px;}
+
+/* contents */
+.contents{width:80%; height:100%; background: #ddd;}
+.reels_wrap{width:500px; height:100vh; margin:0 auto; padding-top:30px;}
+.reels{width:100%; height:85%; display: flex; align-items: flex-end; justify-content: space-between;}
+.reels_img{width:85%; height:100%; background: #000; position:relative;}
+.reels_img>img{width:100%; height:100%; object-fit: cover;}
+
+.reels_menu{width:100%; height:auto;  color:#fff; position:absolute; bottom:20px;}
+.reels_menu>div{width:100%; height:40px; padding:0 20px; box-sizing: border-box; display: flex; align-items: center;}
+
+.profile>div{margin-right:10px;}
+.profile>.p_img{width:35px; height:35px;border-radius: 100%; overflow: hidden;}
+.profile>.p_img>img{width:100%; height:100%; object-fit: cover;}
+
+.more>p{margin-right:10px;}
+.more>span{cursor: pointer; color:#777;}
+
+.audio{display: flex;}
+.audio>div{width:50%;}
+
+
+.control{width:10%; height:400px; display: flex; flex-direction: column; justify-content: space-between;}
+.c_menu{width:100%; height:100%; display: flex; flex-direction: column; align-items: center; justify-content: center;}
+.c_img{width:40px; height:40px;}
+.c_img>img{width:100%; height:100%; object-fit: cover;}

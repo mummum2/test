@@ -1,0 +1,80 @@
+// 좋아요 /스크랩 클릭 script
+
+let Like = document.querySelector(".like");
+let Hate = document.querySelector(".hate");
+let Scrap = document.querySelector(".scrap");
+let Save = document.querySelector(".save");
+function LikeClick(){Like.style.display="none";
+Hate.style.display="inline";
+}
+Like.addEventListener('click',LikeClick);
+
+function HateClick(){
+  Like.style.display="inline";
+  Hate.style.display="none";
+ }
+ Hate.addEventListener('click',HateClick)
+
+function ScrapClick(){
+ Save.style.display="inline";
+ Scrap.style.display="none";
+ Save.style.width="20px";
+ Save.style.marginRight="2px";
+}
+ Scrap.addEventListener('click',ScrapClick)
+
+function SaveClick(){
+ Scrap.style.display="inline";
+ Save.style.display="none";
+ }
+Save.addEventListener('click',SaveClick)
+
+
+
+
+
+
+
+
+
+
+
+
+
+// 검색창 띄우기 script
+/* 검색 버튼을 클릭했을 때, 모바일 메뉴는 나타나고, 메뉴랩은 왼쪽으로 사라지고, 서치랩은 왼쪽에서 오른쪽으로 나타난다. */
+let Search = document.querySelector(".s_click");
+let MobileMenu = document.querySelector(".mobile_menu");
+let MenuWrap = document.querySelector(".menu_wrap");
+let SearchWrap = document.querySelector(".search_wrap");
+let MobileSearch = document.querySelector(".m_click");
+
+function SearchClick(){
+  MobileMenu.style.display="block";
+  MenuWrap.style.left="-200px";
+  MenuWrap.style.transition="all 0.5s";
+  SearchWrap.style.left="106px";
+  SearchWrap.style.transition="all 0.5s";
+
+}
+
+Search.addEventListener("click",SearchClick);
+
+/*모바일메뉴의 서치를 클릭 했을 때, 서치랩은 왼쪽으로 사라지고, 모바일메뉴도 사라지고, 메뉴랩이 왼쪽에서 오른쪽으로 나타난다.*/
+
+// function MobileSearchClick(){
+//   SearchWrap.style.left="-106px";
+//   SearchWrap.style.transition="all 0.5s";
+//   MobileMenu.style.left="none";
+//   MenuWrap.style.left="200px";
+//   MenuWrap.style.transition="all 0.5s";
+
+// }
+// Search.addEventListener("click",MobileSearchClick);
+
+
+
+
+
+
+
